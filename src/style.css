@@ -121,4 +121,8 @@ h1{
     font-family: 'Poppins', sans-serif; 
     
   }
-     
+
+ .hideElement{
+   display: none;
+ }
+  
