@@ -24,7 +24,7 @@ const filterTheme = () => {
   
   //dataGlobal
 
-const HomePage = document.getElementById("HomePage");
+/*const HomePage = document.getElementById("HomePage");
 const info = document.getElementById("info");
 const informate = document.getElementById("informate");
 
