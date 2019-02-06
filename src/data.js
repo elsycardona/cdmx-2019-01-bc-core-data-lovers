@@ -24,3 +24,19 @@ const filterTheme = () => {
   
   //dataGlobal
 
+/*const HomePage = document.getElementById("HomePage");
+const info = document.getElementById("info");
+const informate = document.getElementById("informate");
+
+info.addEventListener("click", () => {
+  HomePage.classList.add('hideElement')
+  informate.classList.remove('hideElement')
+}
+)
+
+//MEXICO.addEventListener("click", () => {
+ // informate.classList.add('hideElement')
+//  infoMex.classList.remove('hideElement')
+//}
+//)
+
