@@ -1,3 +1,4 @@
+
 //boton para entrar a la pagína donde se generar la filtración y se mostra la data 
 const botonInfo = document.getElementById('botonInfo');
 
@@ -36,26 +37,45 @@ botonInfo.addEventListener('click', () => {
 });
 //Impresión Database México
 selectMex.addEventListener('change', () => {
-  dataMEX.forEach(function (dataMEX) {
-    console.log(dataMEX);
-    if (dataMEX >= 1)
-      console.log(dataMEX);
-  });
+  let enclick = selectMex.value;
+  if(enclick === 'MEX'){
+    dataMEX.forEach(element => {
+      // console.log(element.data)
+      });
+      // console.log(dataMEX[15].data)
+      let años = dataMEX[15].data
+      for (const año in años) {
+        if (años.hasOwnProperty(año)) {
+          let element = años[año];
+          element = parseFloat(element)
+          // console.log(  parseInt(element)) 
+          if(element > 0){
+            console.log(element)
+          }
+        }
+      }
+
+  }
+
+  //   // console.log(dataMEX);
+  //   if (dataMEX >= 1)
+  //     console.log(dataMEX);
 });
 
 //Impresión de Database Perú
 selectPeru.addEventListener('change', () => {
   dataPER.forEach(function (dataPER) {
-    console.log(dataPER);
+    // console.log(dataPER);
     if (dataPER >= 1)
       console.log(dataPER);
   });
+  
 })
 
 //Impresión de Database Brasil
 selectBrasil.addEventListener('change', () => {
   dataBRA.forEach(function (dataBRA) {
-    console.log(dataBRA);
+    // console.log(dataBRA);
      if (dataBRA >= 1)
     console.log(dataBRA);
    

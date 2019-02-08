@@ -4,4 +4,5 @@
 
   
   //dataGlobal
-
+  window.worldBank 
+  
