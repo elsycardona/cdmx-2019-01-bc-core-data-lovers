@@ -101,7 +101,6 @@ article {
   background-color: firebrick;
   display: inline-block;
   margin-top: 20%;
-  float: right;
   font-family: 'Poppins', sans-serif;
   height: 250px;
   color: white;
@@ -149,4 +148,5 @@ h1 {
 }
 
 
+      
 

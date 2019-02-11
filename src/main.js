@@ -47,4 +47,7 @@ botonInfo.addEventListener('click', () => {
                     console.log(element)
                   }
                 }
-              });
+              }
+            }
+          });
+        });
