@@ -1,50 +1,55 @@
-//boton para entrar a la pagína donde se generar la filtración y se mostra la data 
-const botonInfo = document.getElementById('botonInfo');
 
-//constantes de cada section para que se muestran y ocultan creando la simulación de pagínas
-const root = document.getElementById('root');
-const informate = document.getElementById('informate');
+const botonInfo = document.getElementById('informate'); //boton para entrar a la pagína donde se generar la filtración y se mostra la data 
+const welcomePage = document.getElementById('welcomePage');
+const pageForData = document.getElementById('info');
 
-//constantes para seleccionar el país y se dispare el evento al seleccionar uno   
-const selectorPais = document.getElementById('selectorPais');
-const selectMex = document.getElementById('selectorPais');
-const selectPeru = document.getElementById('selectorPais');
-const selectBrasil = document.getElementById('selectorPais');
+const pagesjumps = document.getElementById('commits' , 'impact')//constantes para brincar a la section que se utiliza como una pagina
+const selectOption = document.getElementById('country-filter');
+let content = document.getElementById('show-content');
+const indicators = document.getElementById('indicator');
 
-//const para cada pais en el selector 
-const dataMEX = WORLDBANK.MEX.indicators;
-const indicatorMex = document.getElementById("selectMex");
+document.getElementById('informate').addEventListener ('click' , ( ) => { 
+welcomePage.style.display = 'none';
+pageForData.style.display = 'block';  
 
-const dataPER = WORLDBANK.PER.indicators;
-const indicatorPeru = document.getElementById("selectPeru");
-
-const dataBRA = WORLDBANK.BRA.indicators;
-const indicatorBrasil = document.getElementById("selectBrasil");
-
-//función que dispara el evento de mostrar y ocultar la pagina root a la pagina informate 
-botonInfo.addEventListener('click', () => {
-  root.classList.add('hideElement');
-  informate.classList.remove('hideElement');
+jumpto(anchor)(); {
+window.location.href = "#"+anchor;
+}
 });
+const filterCountryIndicator = () =>{
+  let select = selectOption.value; //value "MEX", "PER","BRA","CHL"
+    //console.log(select);
+     let country = window.filterCountry(select); 
+     objectKey (country); 
+}
+selectOption.addEventListener('change',filterCountryIndicator); 
+const objectKey = (country)=>{
+let answer="";
+ for (let i in country) 
+  {
+    answer+="<li>"+"<b>"+i+":  "+"</b>"+country[i].toFixed(2)+"%"+"</li>"+"<br>"; 
+  document.getElementById('show-content').innerHTML = answer;   
+ return answer
+}
 
-//Impresión Database México
-selectMex.addEventListener('change', () => {
-  let enclick = selectMex.value;
-  if (enclick === 'MEX') {
-    dataMEX.forEach(element => {
-      // console.log(element.data)
-    });
+//countries.addEventListener('change', () => { //Impresión Database para cada país
+  //let enclick = selectorPais.value;
+  //if (enclick === 'countries') {
+    //dataGlobal.forEach(element => {
+      
+   // });
     // console.log(dataMEX[15].data)
-    let años = dataMEX[15].data
-    for (const año in años) {
-      if (años.hasOwnProperty(año)) {
-        let element = años[año];
-        element = parseFloat(element)
-        // console.log(parseInt(element)) 
-        if (element > 0) {
-          console.log(element)
-        }
-      }
-    }
-  }
-});
+    //for (const año in años) {
+      //if (años.hasOwnProperty(año)) {
+        //let element = años[año];
+        //element = parseFloat(element)
+        // console.log(  parseInt(element)) 
+        //if (element > 0) {
+          //console.log(element)
+     //   }
+     // }
+    //}
+
+  //}
+
+}
