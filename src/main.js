@@ -1,4 +1,3 @@
-
 //boton para entrar a la pagína donde se generar la filtración y se mostra la data 
 const botonInfo = document.getElementById('botonInfo');
 
@@ -12,14 +11,7 @@ const selectMex = document.getElementById('selectorPais');
 const selectPeru = document.getElementById('selectorPais');
 const selectBrasil = document.getElementById('selectorPais');
 
-
 //const para cada pais en el selector 
-
-
-
-
-//const para cada pais en el selector 
-
 const dataMEX = WORLDBANK.MEX.indicators;
 const indicatorMex = document.getElementById("selectMex");
 
@@ -33,29 +25,26 @@ const indicatorBrasil = document.getElementById("selectBrasil");
 botonInfo.addEventListener('click', () => {
   root.classList.add('hideElement');
   informate.classList.remove('hideElement');
-
-
+});
 
 //Impresión Database México
 selectMex.addEventListener('change', () => {
   let enclick = selectMex.value;
-  if(enclick === 'MEX'){
+  if (enclick === 'MEX') {
     dataMEX.forEach(element => {
       // console.log(element.data)
-      });
-      // console.log(dataMEX[15].data)
-      let años = dataMEX[15].data
-      for (const año in años) {
-        if (años.hasOwnProperty(año)) {
-          let element = años[año];
-          element = parseFloat(element)
-          // console.log(  parseInt(element)) 
-          if(element > 0){
-            console.log(element)
-          }
+    });
+    // console.log(dataMEX[15].data)
+    let años = dataMEX[15].data
+    for (const año in años) {
+      if (años.hasOwnProperty(año)) {
+        let element = años[año];
+        element = parseFloat(element)
+        // console.log(parseInt(element)) 
+        if (element > 0) {
+          console.log(element)
         }
       }
-
-
-})
-
+    }
+  }
+});
