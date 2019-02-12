@@ -1,113 +1,119 @@
-nav{
+nav {
   background-color: white;
   opacity: 0.9;
-   filter: alpha(opacity=90);
+  filter: alpha(opacity=90);
   margin-bottom: -1%;
- }
- 
- 
- ul {
- display: inline-block;
- padding-left: 47%;
- position: absolute;
-     left: -1%;
-     top: 0
- }
- 
- h1{
- font-family:'Quicksand', sans-serif;
- color: firebrick;
- 
- }
- 
- .links{
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
-     
- }
- 
- .links a {
-    color: gray;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 2vh;
-    font-family: 'Quicksand', sans-serif;
-  
- 
- }
- 
- .links li{
-    list-style: none;
-    
- 
- }
- 
- 
- .text{
-   padding-top: 9%;
-   padding-left: 1%;
-   font-family: 'Quicksand', sans-serif;
-   font-size: 7vh;
-   color: white;
- 
- }
- 
- button#informate{
-   border-radius: 4px;
-   /*background-color: firebrick;*/
-   background-color:transparent;
-   color: white;
-   border: 2px solid firebrick;
-   text-align: center;
-   font-size: 16px;
-   padding: 10px 24px;
-   border-radius: 8px;
- }
- .button#informate:hover{
- background-color: black;
- }
- #spaceforbutton{
-   padding: 4%;
-   padding-left: -4%;
- }
- .welcome{
-   background-image: url("https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-   width: 100%;
-   height: 100vh;
-   background-size: cover;
-   background-position: center;
-   opacity: 0.9;
-   filter: alpha(opacity=90);
- }
- .showPrincipal{
- background-color: white;
-   opacity: 0.9;
-   filter: alpha(opacity=90);
- font-family: 'Karla', sans-serif;
- text-align: center;
- font-size: 2vh;
- padding-top: -53%;
- 
- }
- .areaForText{
-   padding-bottom: 5%;
-   padding-top: 2%;
- }
- 
- #show-content{
- padding-bottom: 50%;
- }
- 
- .theCommits{
-   background-color: yellow;
-   padding-bottom: 60%;
- }
- .theImpact{
-   background-color: white;
-   padding-bottom: 30%;
- }
+}
+
+
+ul {
+  display: inline-block;
+  padding-left: 47%;
+  position: absolute;
+  left: -1%;
+  top: 0
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  color: firebrick;
+
+}
+
+.links {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+
+}
+
+.links a {
+  color: gray;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 2vh;
+  font-family: 'Quicksand', sans-serif;
+
+
+}
+
+.links li {
+  list-style: none;
+
+
+}
+
+
+.text {
+  padding-top: 9%;
+  padding-left: 1%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 7vh;
+  color: white;
+
+}
+
+button#informate {
+  border-radius: 4px;
+  /*background-color: firebrick;*/
+  background-color: transparent;
+  color: white;
+  border: 2px solid firebrick;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 8px;
+}
+
+.button#informate:hover {
+  background-color: black;
+}
+
+#spaceforbutton {
+  padding: 4%;
+  padding-left: -4%;
+}
+
+.welcome {
+  background-image: url("https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.showPrincipal {
+  background-color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  font-size: 2vh;
+  padding-top: -53%;
+
+}
+
+.areaForText {
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+#show-content {
+  padding-bottom: 50%;
+}
+
+.theCommits {
+  background-color: yellow;
+  padding-bottom: 60%;
+}
+
+.theImpact {
+  background-color: white;
+  padding-bottom: 30%;
+}
 
 .container {
   border: 2px solid #ccc;
@@ -142,16 +148,15 @@ nav{
   .container {
     text-align: center;
   }
+}
 
   .container img {
     margin: auto;
     float: none;
     display: block;
   }
-}
- .social{
-   background-color: gray;
-   padding-bottom: 10%;
- }
- 
- 
+
+  .social {
+    background-color: gray;
+    padding-bottom: 10%;
+  }
