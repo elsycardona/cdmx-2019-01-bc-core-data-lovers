@@ -33,17 +33,34 @@ const objectKey = (country) => {
       return answer
     }*/
 
-document.getElementById('countryfilter').addEventListener('change', () => { //Impresión Database para cada país
-  let enclick = countryfilter.value;
-  let dataMostrar = dataBank[enclick]
-  let indicators = dataMostrar.indicators;
+const filtroDeIndicadores = document.getElementById('countryfilter').addEventListener('change', () => { //Impresión Database para cada país
+  const enclick = countryfilter.value;
+  const dataMostrar = dataBank[enclick]
+  const indicators = dataMostrar.indicators;
   indicators.forEach(indicator => {
-    let indicatorName = indicator.indicatorName;
-    let vare = new RegExp(/educación/i)
+    const indicatorName = indicator.indicatorName;
+    const vare = new RegExp(/educación/i)
     if(indicatorName.match(vare) != null){
-      indicadoresHTML.insertAdjacentHTML("beforeend", `<option value="indicadores">${indicatorName}</option>`)
+      indicadoresHTML.insertAdjacentHTML("beforeend", `<option value="${indicatorName}">${indicatorName}</option>`) 
   }
-})})
+})
+indicadoresHTML.addEventListener('change', () => {
+let valoresExtraidosDeIndicadores = event.target.value
+indicators.forEach(element=> {
+if(valoresExtraidosDeIndicadores=== element.indicatorName){
+  console.log(element.data)
+}
+  // console.log(element.indicatorName)
+})
+})
+return indicators
+})
+
+
+//document.getElementById('indicadores').addEventListener('change'), () => {
+  //const enclick2 = indicadores.value;
+  //console.log(enclick2);
+//}
 
 /*dataBank.forEach(() => {
     console.log(dataMEX[15].data)
