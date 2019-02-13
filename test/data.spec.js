@@ -1,12 +1,12 @@
 require('../src/data.js');
+require('../src/data/worldbank/worldbank.js')
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
+describe('dataBank', () => {
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
+    it('debería ser un objeto', () => {
+
+      expect(typeof dataBank).toBe('object');
+    })
+  }
+)
