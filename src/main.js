@@ -1,4 +1,3 @@
-
 const botonInfo = document.getElementById('informate'); //boton para entrar a la pagína donde se generar la filtración y se mostra la data 
 const welcomePage = document.getElementById('welcomePage');
 const pageForData = document.getElementById('info');
@@ -24,14 +23,6 @@ const filterCountryIndicator = () => {
   objectKey(country);
 }
 
-/*selectOption.addEventListener('change', filterCountryIndicator);
-const objectKey = (country) => {
-    let answer = "";
-    for (let i in country) {
-      answer += "<li>" + "<b>" + i + ":  " + "</b>" + country[i].toFixed(2) + "%" + "</li>" + "<br>";
-      document.getElementById('show-content').innerHTML = answer;
-      return answer
-    }*/
 
 const filtroDeIndicadores = document.getElementById('countryfilter').addEventListener('change', () => { //Impresión Database para cada país
   const enclick = countryfilter.value;
@@ -49,18 +40,13 @@ let valoresExtraidosDeIndicadores = event.target.value
 indicators.forEach(element=> {
 if(valoresExtraidosDeIndicadores=== element.indicatorName){
   console.log(element.data)
+  return element.data
 }
-  // console.log(element.indicatorName)
 })
 })
 return indicators
 })
 
-
-//document.getElementById('indicadores').addEventListener('change'), () => {
-  //const enclick2 = indicadores.value;
-  //console.log(enclick2);
-//}
 
 /*dataBank.forEach(() => {
     console.log(dataMEX[15].data)
