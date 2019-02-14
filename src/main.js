@@ -38,9 +38,53 @@ const filtroDeIndicadores = document.getElementById('countryfilter').addEventLis
 indicadoresHTML.addEventListener('change', () => {
 let valoresExtraidosDeIndicadores = event.target.value
 indicators.forEach(element=> {
-if(valoresExtraidosDeIndicadores=== element.indicatorName){
-  console.log(element.data)
-  return element.data
+if(valoresExtraidosDeIndicadores === element.indicatorName){
+  //console.log(element.data)
+  const valoresFinales = (element.data);
+  //console.log(valoresFinales)
+  for (ejeXyears in valoresFinales){
+    if(valoresFinales.hasOwnProperty(ejeXyears)){
+
+      let ejeYporcent = valoresFinales[ejeXyears];
+    ejeYporcent = parseFloat(ejeYporcent)
+    //console.log(parseInt(quitandoCero))
+    if (ejeYporcent > 0) {
+      //INTENTO DE TABLA//
+const fila="<tr><td>"+ejeXyears+"</td><td>"+ejeYporcent+"</td></tr>";
+const btn = document.createElement("TR");
+btn.innerHTML = fila;
+document.getElementById('intentoDeTabla').appendChild(btn);
+
+
+    //console.log(ejeXyears, ejeYporcent)
+    }
+
+      //console.log("FUNCIONA"+ ejeXyears + " y los valores " +valoresFinales[ejeXyears]);
+      
+      //HASTA AQUÍ FUNCIONA!!!
+      //INTENTO DE GRÁFICA//
+const intentoDeGrafica = document.getElementById('intentoDeGrafica');
+new Morris.Line({
+ 
+  element: 'intentoDeGrafica',
+  // Registros de datos de gráficos: cada entrada en esta matriz corresponde a un punto en
+  // el gráfico
+  data: [
+        { ejeXyears: '', ejeYporcent: '' }
+  ],
+  //  El nombre del atributo de registro de datos que contiene valores de x.
+  xkey: 'ejeXyears',
+  // Una lista de nombres de atributos de registro de datos que contienen valores y.
+  ykeys: ['value'],
+  // Etiquetas para los ykeys - se mostrarán cuando pase el cursor sobre el
+  // gráfico.
+  labels: ['Value'],
+  resize: true
+});
+
+
+    }
+  }
 }
 })
 })
@@ -48,22 +92,7 @@ return indicators
 })
 
 
-/*dataBank.forEach(() => {
-    console.log(dataMEX[15].data)
-    
-    for (const año in años) {
-    if (años.hasOwnProperty(año)) {
-    let element = años[año];
-    element = parseFloat(element)
-    console.log(parseInt(element))
-    if (element > 0) {
-    console.log(element)
-    }
-    }
-    }});*/
- 
-
-//INTENTO DE GRÁFICA//
+/*INTENTO DE GRÁFICA//
 const intentoDeGrafica = document.getElementById('intentoDeGrafica');
 new Morris.Line({
  
@@ -85,4 +114,4 @@ new Morris.Line({
   // gráfico.
   labels: ['Value'],
   resize: true
-});
+});*/
