@@ -42,6 +42,7 @@ if(valoresExtraidosDeIndicadores === element.indicatorName){
   //console.log(element.data)
   const valoresFinales = (element.data);
   //console.log(valoresFinales)
+  document.getElementById('intentoDeTabla').innerHTML = '';
   for (ejeXyears in valoresFinales){
     if(valoresFinales.hasOwnProperty(ejeXyears)){
 
