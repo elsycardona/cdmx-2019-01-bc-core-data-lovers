@@ -20,12 +20,13 @@ document.getElementById('informate').addEventListener('click', () => {
   objectKey(country);
 }*/
 
-document.getElementById('countryfilter').addEventListener('change', () => { 
+//esta función es filter en data.js
+document.getElementById('countryfilter').addEventListener('change', () => {
   let enclick = countryfilter.value;
   let dataMostrar = dataBank[enclick]
   let indicators = dataMostrar.indicators;
 
-  //función para los indicadores, buscador de EDUCACIÓN
+  //función para los indicadores,buscador de EDUCACIÓN También está en data.js
   indicators.forEach(indicator => {
     let indicatorName = indicator.indicatorName;
     let vare = new RegExp(/educación/i)
