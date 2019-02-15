@@ -1,3 +1,4 @@
+
 //const botonInfo = document.getElementById('informate'); //boton para entrar a la pagína donde se generar la filtración y se mostra la data 
 const welcomePage = document.getElementById('welcomePage');
 //const pageForData = document.getElementById('info');
@@ -10,6 +11,7 @@ const indicadoresHTML = document.getElementById('indicadores')
 
 document.getElementById('informate').addEventListener('click', () => {
   welcomePage.style.display = 'none';
+
 
 });
 

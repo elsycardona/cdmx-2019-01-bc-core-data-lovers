@@ -25,6 +25,6 @@ window.dataBank = {
         if (indicatorName.match(vare) != null) {
           return countryfilter
         }
-      })
- }
-}
+      });
+    }
+    }
