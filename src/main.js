@@ -72,6 +72,7 @@ console.log(descender);*/
     //console.log(ejeXyears, ejeYporcent)
     }
 
+
       //console.log("FUNCIONA"+ ejeXyears + " y los valores " +valoresFinales[ejeXyears]);
       
       //HASTA AQUÍ FUNCIONA!!!
@@ -94,6 +95,7 @@ new Morris.Line({
   labels: ['Value'],
   resize: true
 });*/
+
 
 
     }
