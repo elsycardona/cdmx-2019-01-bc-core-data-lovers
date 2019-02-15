@@ -3,20 +3,41 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Femeduca</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  
+  <!--LINK QUE USA JQUERY PARA GRÁFICA-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <!--LINKS DE LIBRERÍA DE GRÁFICAS-->
+    <link rel="stylesheet" href="../libs/morris.css">
+    <script src="../libs/morris.min.js" charset="utf-8"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    FIN DE LINKS DE LIBRERÍA DE GRÁFICAS-->
+
+
 </head>
-<nav class="nav" id="Topnav">
-  <h1>Femeduca</h1>
-  <ul class="links">
-    <li><a href="#impact">Impacto</a></li>
-    <li><a href="#commits">Compromiso</a></li>
-  </ul>
-</nav>
+<header>
+  <div id="container">
+    <h1 class = "fas fa-flask">Femeduca</h1>
+    <input type="checkbox" id="menu-bar">
+    <label class="fas fa-bars" for="menu-bar"></label>
+    <nav class="">
+      <a href="">acerca de</a>
+      <a href="">unete</a>
+      <a href="">contacto</a>
+    </nav>
+  </div>
+</header>
+
+
+
 
 <body>
   <section id="welcomePage" class="welcome">
@@ -52,31 +73,33 @@
     </select>
 
 
-    <p id="datomaximo"> IMPRIMIR</p>
+    <section id="show-content"> 
+    <!--DIV PARA VISUALIZAR TABLA-->
+    <div id="estadisticaAlta">Aqui va la Estadistica más alta</div>
+    <table>
+      <thead>
+        <tr>
+          <th>AÑO</th>
+          <th>PORCENTAJE</th>
+        </tr>
+      </thead>
+      <tbody id="intentoDeTabla">
+      </tbody>
+    </table>
+    <!--FIN DE DIV PARA VISUALIZAR-->
 
 
-    <section id="show-content"> </section>
-  </section>
-  <section id="impact" class="theImpact">
-    <div class="container">
-      <img src="imagenes/testimonio-kim-1.jpg" alt="Avatar" style="width:90px">
-      <p><span>Maria Luisa.</span> Chile.</p>
-      <p>"Nunca pense tener la oportunidad de verdaderamente estudiar, aun que tengo a mi hijo se que puedo ser como
-        las mujeres que nos ayudaron"</p>
+    <!--DIV PARA VISUALIZAR GRÁFICAS-->
+    <button id="visualizarGrafica">Ver Gráfica</button>
+    <div id="intentoDeGrafica" style="height: 250px;">
+    Gráfica [años vs. %]
     </div>
+    <!--FIN DE DIV DE VISUALIZACIÓN DE GRÁFICAS-->
+    
+  </section>
+  
 
-    <div class="container">
-      <img src="imagenes/images.jpg" alt="Avatar" style="width:90px">
-      <p><span> Antonieta Flores</span> Hidalgo, México</p>
-      <p>"Vinieron muchas maestras que nos enseñaron a leer"</p>
-    </div>
-  </section>
-  <section id="commits" class="theCommits">
-    compromiso
-  </section>
-  <section id="redes" class="social">
-    socialMedia holaaaaa
-  </section>
+    
   <!-- <script src="./data/injuries/injuries.js"></script> -->
   <!-- <script src="./data/pokemon/pokemon.js"></script> -->
   <!-- <script src="./data/steam/steam.js"></script> -->
@@ -87,3 +110,4 @@
 </body>
 
 </html>
+
