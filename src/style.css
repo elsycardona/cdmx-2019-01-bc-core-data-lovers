@@ -1,156 +1,79 @@
-v{
+*{
+padding:0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: 'Quicksand', sans-serif;
+}
+
+
+header{
+  width: 100%;
+  height: 50px;
+  background: rgb(82, 82, 230);
+  color: white;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 100%;
+}
+
+.container{
+  width: 98%; 
+  margin: auto;
+}
+
+/*estilo para el menu en mobile*/
+.menu-bar{
+  cursor: pointer;
+
+
+}
+
+header label{
+float: right; 
+font-size: 28px;
+margin: 6px 0;  
+}
+
+header .container{
+display: table;
+}
+
+h1{
+  float: left;
+}
+
+.menu{
+position: absolute;
+top: 0;
+left: 0; 
+width: 100%;
+height: 100vh;
+background:gray; 
+}
+
+.menu a {
+display:block;
+color: gray; 
+height: 50px; 
+text-decoration: none; 
+padding: 15px; 
+border: bottom 1px solid;
+}
+
+
+
+/*.showPrincipal {
   background-color: white;
   opacity: 0.9;
-   filter: alpha(opacity=90);
-  margin-bottom: -1%;
- }
- 
- 
- ul {
- display: inline-block;
- padding-left: 47%;
- position: absolute;
-     left: -1%;
-     top: 0
- }
- 
- h1{
- font-family:'Quicksand', sans-serif;
- color: firebrick;
- 
- }
- 
- .links{
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
-     
- }
- 
- .links a {
-    color: gray;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 2vh;
-    font-family: 'Quicksand', sans-serif;
-  
- 
- }
- 
- .links li{
-    list-style: none;
-    
- 
- }
- 
- 
- .text{
-   padding-top: 9%;
-   padding-left: 1%;
-   font-family: 'Quicksand', sans-serif;
-   font-size: 7vh;
-   color: white;
- 
- }
- 
- button#informate{
-   border-radius: 4px;
-   /*background-color: firebrick;*/
-   background-color:transparent;
-   color: white;
-   border: 2px solid firebrick;
-   text-align: center;
-   font-size: 16px;
-   padding: 10px 24px;
-   border-radius: 8px;
- }
- .button#informate:hover{
- background-color: black;
- }
- #spaceforbutton{
-   padding: 4%;
-   padding-left: -4%;
- }
- .welcome{
-   background-image: url("https://images.unsplash.com/photo-1522661067900-ab829854a57f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-   width: 100%;
-   height: 100vh;
-   background-size: cover;
-   background-position: center;
-   opacity: 0.9;
-   filter: alpha(opacity=90);
- }
- .showPrincipal{
- background-color: white;
-   opacity: 0.9;
-   filter: alpha(opacity=90);
- font-family: 'Karla', sans-serif;
- text-align: center;
- font-size: 2vh;
- padding-top: -53%;
- 
- }
- .areaForText{
-   padding-bottom: 5%;
-   padding-top: 2%;
- }
- 
- #show-content{
- padding-bottom: 50%;
- }
- 
- .theCommits{
-   background-color: yellow;
-   padding-bottom: 60%;
- }
- .theImpact{
-   background-color: white;
-   padding-bottom: 30%;
- }
+  filter: alpha(opacity=90);
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  font-size: 2vh;
+  padding-top: -53%;*/
 
-.container {
-  border: 2px solid #ccc;
-  background-color: firebrick;
-  border-radius: 5px;
-  padding: 16px;
-  margin: 16px 0;
 }
 
-
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-.container img {
-  float: left;
-  margin-right: 20px;
-  border-radius: 40%;
-}
-
-
-.container span {
-  font-size: 20px;
-  margin-right: 15px;
-}
-
-
-@media (max-width: 500px) {
-  .container {
-    text-align: center;
-  }
-
-  .container img {
-    margin: auto;
-    float: none;
-    display: block;
-  }
-}
- .social{
-   background-color: gray;
-   padding-bottom: 10%;
- }
- 

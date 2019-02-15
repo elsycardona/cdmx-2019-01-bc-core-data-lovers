@@ -1,137 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=0">
   <title>Femeduca</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 </head>
+<header>
+  <div id="container">
+    <h1 class = "fas fa-flask">Femeduca</h1>
+    <input type="checkbox" id="menu-bar">
+    <label class="fas fa-bars" for="menu-bar"></label>
+    <nav class="">
+      <a href="">acerca de</a>
+      <a href="">unete</a>
+      <a href="">contacto</a>
+    </nav>
+  </div>
+</header>
 
-  <nav class="nav" id="Topnav">
-    <h1>Femeduca</h1>
-    <ul class="links">
-      <li><a href="#impact">Impacto</a></li>
-      <li><a href="#commits">Compromiso</a></li>
-    </ul>
-  </nav> 
+
+
 
 <body>
-    
-  <section id = "welcomePage" class = "welcome">
-    <div class = "text">
-    Adolescentes: derecho a la educación <br> y al bienestar futuro.<br>
-    <div id = "spaceforbutton"><button id = "informate" class = "Informate">Informate y participa</button> </div>
+  <!--<section id="welcomePage" class="welcome">
+    <div class="text">
+      Adolescentes: derecho a la educación <br> y al bienestar futuro.<br>
+      <div id="spaceforbutton"><button id="informate" class="Informate">Infórmate y participa</button> </div>
     </div>
   </section>
-
   <section id="info" class="showPrincipal">
-    <article id = "instructions" class = "areaForText">
-     <h1>Las más escolarizadas, pero no las más educadas</h1>
-     A continuación presentaremos algunos datos estadísticos sobre la situación educativa de las mujeres en América Latina. Para ello se ha recurrido a información disponible en el Banco Mundial que aluden a la realidad regional. Sin embargo, somos conscientes de que esta información es escasa, fragmentaria y, en muchos casos, difícil o imposible de comparar. los datos estadísticos proporcionan la experiencia educativa de las mujeres. Indudablemente, el acceso a la educación, la permanencia y la movilidad a lo largo del sistema, son indicadores importantes de sus logros en el plano de la igualdad social.
+    <article id="instructions" class="areaForText">
+      <h1>Las más escolarizadas, pero no las más educadas</h1>
+      A continuación presentaremos algunos datos estadísticos sobre la situación educativa de las mujeres en América
+      Latina. Para ello se ha recurrido a información disponible en el Banco Mundial que aluden a la realidad regional.
+      Sin embargo, somos conscientes de que esta información es escasa, fragmentaria y, en muchos casos, difícil o
+      imposible de comparar. los datos estadísticos proporcionan la experiencia educativa de las mujeres.
+      Indudablemente, el acceso a la educación, la permanencia y la movilidad a lo largo del sistema, son indicadores
+      importantes de sus logros en el plano de la igualdad social.
     </article>
     <p>indicador <b>Población mujeres (% del total),</b> seleccione País del que desea mostrar los datos.</p>
-    <p id="nom-indicador" class="hide"></p> 
-        
-    <select id="country-filter" name= "countries">
-      <option>selecciona un pais</option>
-      <option value="MEX" >México</option>
-      <option value="PER" >Perú</option>
-      <option value="BRA" >Brasil</option>
-      <option value="CHL" >Chile</option>
+    <p id="nom-indicador" class="hide"></p>
+
+    <select id="countryfilter" name="countries">
+      <option>Selecciona un país</option>
+      <option value="MEX">México</option>
+      <option value="PER">Perú</option>
+      <option value="BRA">Brasil</option>
+      <option value="CHL">Chile</option>
     </select>
-    
-    <!--<select id="filter-for-indicators" name= "indicator" class = "selection">
-      <option value = "none">indicadores de educación a nivel secundaria</option>
-      <option value = "Educación de nivel secundario, alumnos (% de mujeres)">Educación a nivel secundario</option>
-      <option value = "Educación de nivel secundario, alumnos en programas vocacionales (% de mujeres)">Alumnas en programas Vocacionales</option>
-      <option value = "Inscripción escolar, nivel secundario, mujeres (% bruto)">Inscripción escolar a nivel secundaria</option>  
-      <option value = "Población, mujeres (% del total)">Poblacion total de mujeres en latinoamerica</option>
-      <option value = "Adolescentes que no asisten a la escuela, mujeres (% de mujeres en edad de asistir al ciclo inferior de la escuela secundaria)">Adolescentes que no asisten a la escuela</option>
+    <select name="indicadores" id="indicadores">
+      <option value="indicadores">Indicadores</option>
     </select>-->
 
-     
+    <section id="show-content"> </section>
+  </section>
+  
+
     
-   
-<section id="show-content"> </section>
-  </section>
-
-
-
-  <section id = "impact" class = "theImpact">
-      <div class="container">
-          <img src="imagenes/INICIO-TESTIMONIO-2-2.jpg" alt="Avatar" style="width:90px">
-          <p><span>Maria Luisa.</span> Chile.</p>
-          <p>"Nunca pense tener la oportunidad de verdaderamente estudiar, aun que tengo a mi hijo se que puedo ser como las mujeres que nos ayudaron"</p>
-        </div>
-        
-        <div class="container">
-          <img src="imagenes/Women-At-Sunset.jpg" alt="Avatar" style="width:90px">
-          <p><span > Antonieta Flores</span> Hidalgo, México</p>
-          <p>"Vinieron muchas maestras que nos enseñaron a leer"</p>
-        </div>
-  </section>
-
-  <section id = "commits" class = "theCommits" >
-   compromiso
-  </section>
-
-  <section id = "redes" class = "social" >
-    socialMedia
-  </section>
-   <p>pequeño cambio prueba</p> 
-
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <script src="./data/worldbank/worldbank.js"></script>
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
 </body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <script src="./data/injuries/injuries.js"></script> -->
-<!-- <script src="./data/pokemon/pokemon.js"></script> -->
-<!-- <script src="./data/steam/steam.js"></script> -->
-<script src="./data/worldbank/worldbank.js"></script>
-<!-- <script src="./data/lol/lol.js"></script> -->
-<script src="data.js"></script>
-<script src="main.js"></script>
 
 </html>
