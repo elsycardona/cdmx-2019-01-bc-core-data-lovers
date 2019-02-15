@@ -73,7 +73,7 @@ console.log(descender);*/
       //console.log("FUNCIONA"+ ejeXyears + " y los valores " +valoresFinales[ejeXyears]);
       
       //HASTA AQUÍ FUNCIONA!!!
-      //INTENTO DE GRÁFICA//
+      /*INTENTO DE GRÁFICA//
 const intentoDeGrafica = document.getElementById('intentoDeGrafica');
 new Morris.Line({
  
@@ -91,7 +91,7 @@ new Morris.Line({
   // gráfico.
   labels: ['Value'],
   resize: true
-});
+});*/
 
 
     }
@@ -103,7 +103,9 @@ return indicators
 })
 
 
-/*INTENTO DE GRÁFICA//
+//INTENTO DE GRÁFICA//
+//boton para VER GRAFICA//
+const botonGrafica = document.getElementById('visualizarGrafica').addEventListener('click', () => {
 const intentoDeGrafica = document.getElementById('intentoDeGrafica');
 new Morris.Line({
  
@@ -111,9 +113,9 @@ new Morris.Line({
   // Registros de datos de gráficos: cada entrada en esta matriz corresponde a un punto en
   // el gráfico
   data: [
-    { year: '2008', value: 20 },
+    { year: '2008', value: 5 },
     { year: '2009', value: 10 },
-    { year: '2010', value: 5 },
+    { year: '2010', value: 8 },
     { year: '2011', value: 5 },
     { year: '2012', value: 20 }
   ],
@@ -125,7 +127,5 @@ new Morris.Line({
   // gráfico.
   labels: ['Value'],
   resize: true
-});*/
-
-
-
+});
+})
