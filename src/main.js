@@ -13,6 +13,7 @@ document.getElementById('informate').addEventListener('click', () => {
 
 });
 
+
 //esta función es filter en data.js
   const filtroDeIndicadores = document.getElementById('countryfilter').addEventListener('change', () => { //Impresión Database para cada país
   const enclick = countryfilter.value;
@@ -43,7 +44,7 @@ if(valoresExtraidosDeIndicadores === element.indicatorName){
     //console.log(parseInt(quitandoCero))
     if (ejeYporcent > 0) {
       //INTENTO DE TABLA//
-const fila="<tr><td>"+ejeXyears+"</td><td>"+ejeYporcent+"</td></tr>";
+const fila="<tr><td>"+ejeXyears+"</td><td>"+ejeYporcent.toFixed(2)+"%"+"</td></tr>";
 const btn = document.createElement("TR");
 btn.innerHTML = fila;
 document.getElementById('intentoDeTabla').appendChild(btn);
