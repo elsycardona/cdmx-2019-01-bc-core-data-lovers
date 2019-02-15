@@ -56,6 +56,23 @@ const btn = document.createElement("TR");
 btn.innerHTML = fila;
 document.getElementById('intentoDeTabla').appendChild(btn);
 
+//FUNCIÓN PARA ORDENAR DESCENDENTE ENPORCENTAJES
+
+//function descender = ejeYporcent.sort((a, b) => b - a);
+//console.log(descender) 
+//function sortNumber(a,b) {return b - a;} ejeYporcent.sort(sortNumber);
+//console.log(ejeYporcent.sort(","));
+//console.log(ejeYporcent.sort);
+
+/*function descender => ejeYporcent.sort((a, b) => b - a){
+  if (a < b) {
+    return -1;
+  }
+  if (a > b) {
+    return 1;
+  }
+};
+console.log(descender);*/
 
     //console.log(ejeXyears, ejeYporcent)
     }
