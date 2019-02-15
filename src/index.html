@@ -3,12 +3,24 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Femeduca</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  
+  <!--LINK QUE USA JQUERY PARA GRÁFICA-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <!--LINKS DE LIBRERÍA DE GRÁFICAS-->
+    <link rel="stylesheet" href="../libs/morris.css">
+    <script src="../libs/morris.min.js" charset="utf-8"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    FIN DE LINKS DE LIBRERÍA DE GRÁFICAS-->
+
+
 </head>
 <nav class="nav" id="Topnav">
   <h1>Femeduca</h1>
@@ -49,8 +61,31 @@
       <option value="indicadores">Indicadores</option>
     </select>
 
-    <section id="show-content"> </section>
+    <section id="show-content"> 
+    <!--DIV PARA VISUALIZAR TABLA-->
+    <div id="estadisticaAlta">Aqui va la Estadistica más alta</div>
+    <table>
+      <thead>
+        <tr>
+          <th>AÑO</th>
+          <th>PORCENTAJE</th>
+        </tr>
+      </thead>
+      <tbody id="intentoDeTabla">
+      </tbody>
+    </table>
+    <!--FIN DE DIV PARA VISUALIZAR-->
+
+    <!--DIV PARA VISUALIZAR GRÁFICAS-->
+    <button id="visualizarGrafica">Ver Gráfica</button>
+    <div id="intentoDeGrafica" style="height: 250px;">
+    Gráfica [años vs. %]
+    </div>
+    <!--FIN DE DIV DE VISUALIZACIÓN DE GRÁFICAS-->
+    
   </section>
+
+    
   <section id="impact" class="theImpact">
     <div class="container">
       <img src="imagenes/testimonio-kim-1.jpg" alt="Avatar" style="width:90px">
@@ -81,3 +116,4 @@
 </body>
 
 </html>
+
