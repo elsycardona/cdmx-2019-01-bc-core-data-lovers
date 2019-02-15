@@ -1,33 +1,25 @@
-const botonInfo = document.getElementById('informate'); //boton para entrar a la pagína donde se generar la filtración y se mostra la data 
+//const botonInfo = document.getElementById('informate'); //boton para entrar a la pagína donde se generar la filtración y se mostra la data 
 const welcomePage = document.getElementById('welcomePage');
-const pageForData = document.getElementById('info');
-const dataBank = WORLDBANK;
-const pagesjumps = document.getElementById('commits', 'impact') //constantes para brincar a la section que se utiliza como una pagina
-const selectOption = document.getElementById('country-filter');
-let content = document.getElementById('show-content');
-const indicators = document.getElementById('indicator');
+//const pageForData = document.getElementById('info');
+const dataBank = window.WORLDBANK;
+//const pagesjumps = document.getElementById('commits', 'impact') //constantes para brincar a la section que se utiliza como una pagina
+const countryfilter = document.getElementById('countryfilter');
+//const content = document.getElementById('show-content');
+//const indicators = document.getElementById('indicator');
 const indicadoresHTML = document.getElementById('indicadores')
 
 document.getElementById('informate').addEventListener('click', () => {
   welcomePage.style.display = 'none';
-  pageForData.style.display = 'block';
 
-  jumpto(anchor)(); {
-    window.location.href = "#" + anchor;
-  }
 });
-const filterCountryIndicator = () => {
-  let select = selectOption.value; //value "MEX", "PER","BRA","CHL"
-  //console.log(select);
-  const country = window.filterCountry(select);
-  objectKey(country);
-}
 
-
-const filtroDeIndicadores = document.getElementById('countryfilter').addEventListener('change', () => { //Impresión Database para cada país
+//esta función es filter en data.js
+  const filtroDeIndicadores = document.getElementById('countryfilter').addEventListener('change', () => { //Impresión Database para cada país
   const enclick = countryfilter.value;
   const dataMostrar = dataBank[enclick]
   const indicators = dataMostrar.indicators;
+
+  //función para los indicadores,buscador de EDUCACIÓN También está en data.js
   indicators.forEach(indicator => {
     const indicatorName = indicator.indicatorName;
     const vare = new RegExp(/educación/i)
@@ -133,3 +125,6 @@ new Morris.Line({
   labels: ['Value'],
   resize: true
 });*/
+
+
+
