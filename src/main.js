@@ -33,10 +33,12 @@ document.getElementById('countryfilter').addEventListener('change', () => {
     if (indicatorName.match(vare) != null) {
       indicadoresHTML.insertAdjacentHTML("beforeend", `<option value="indicadores">${indicatorName}</option>`)
     }
+    
   })
 
 });
-//console.log(dataMEX[15].data)
+//console.log(dataMEX[15].data) Crear un for para iterar en todos los
+//valores, 
 /*for (const año in años) {
   if (años.hasOwnProperty(año)) {
     let element = años[año];
