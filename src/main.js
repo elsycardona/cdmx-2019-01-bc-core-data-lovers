@@ -71,6 +71,34 @@ console.log(descender);*/
 
     //console.log(ejeXyears, ejeYporcent)
     }
+
+
+
+      //console.log("FUNCIONA"+ ejeXyears + " y los valores " +valoresFinales[ejeXyears]);
+      
+      //HASTA AQUÍ FUNCIONA!!!
+      /*INTENTO DE GRÁFICA//
+const intentoDeGrafica = document.getElementById('intentoDeGrafica');
+new Morris.Line({
+ 
+  element: 'intentoDeGrafica',
+  // Registros de datos de gráficos: cada entrada en esta matriz corresponde a un punto en
+  // el gráfico
+  data: [
+        { ejeXyears: '', ejeYporcent: '' }
+  ],
+  //  El nombre del atributo de registro de datos que contiene valores de x.
+  xkey: 'ejeXyears',
+  // Una lista de nombres de atributos de registro de datos que contienen valores y.
+  ykeys: ['value'],
+  // Etiquetas para los ykeys - se mostrarán cuando pase el cursor sobre el
+  // gráfico.
+  labels: ['Value'],
+  resize: true
+});*/
+
+
+
     }
   }
 }
