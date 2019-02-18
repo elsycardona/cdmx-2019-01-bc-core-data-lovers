@@ -1,19 +1,21 @@
+# Data Lovers
+
 # Proyecto 2 - Data Lovers
 
 Este proyecto está pensado para ser usado como una herramienta de visualización de Información estadística sobre las mujeres en el ámbito educativo de México, Perú, Chile y Brasil -Información tomada del [Banco Mundial](https://www.bancomundial.org/)-; en especial se ha vínculado con [#MarchaPorLaCiencia](http://www.marchaporlacienciamx.org/index.php) para que la Información aquí mostrada, sea utilizada para crear conciencia de la situación de dicho tema.
 
-###¿Quiénes son los principales usuarios del producto?
+### ¿Quiénes son los principales usuarios del producto?
 
 Dirigido a académicos, investigadores o estudiantes universitarios que busquen complementar sus investigaciones
 sobre el tema.
 
-###¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-Que hagan uso de la herramienta para filtrar información por países y por temas, con facilidad y consultar las gráficas.
+### ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+Que hagan uso de la herramienta para filtrar información por países y por temas con facilidad y consultar las gráficas.
 
-###¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-Porcentajes de mujeres y educación, comparaciones entre Países.
+### ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+Porcentajes de mujeres y educación, comparaciones entre países.
 
-###¿Cuándo utilizan o utilizarían el producto?
+### ¿Cuándo utilizan o utilizarían el producto?
 Al estar realizando un scouting del tema, buscando datos duros.
 
 
@@ -22,7 +24,7 @@ Al estar realizando un scouting del tema, buscando datos duros.
 - Investigación con usuarios / entrevistas
 - Principios de diseño visual
 
-Más información sobre el proceso de Diseño y Experiencia de Usuario (UX) [aquí.](___INSERTAR URL DEL TRABAJO UX (ENTREVISTAS, RESULTADOS, ETC____)
+Más información sobre el proceso de Diseño y Experiencia de Usuario (UX) [aquí.](https://docs.google.com/document/d/1rTAHqHMeMCkiKJUDutsJ2RaCJLH0-sjguEMr1qmO8BE/edit?usp=sharing)
 
 ### Tech
 
@@ -85,7 +87,8 @@ Si sólo se requiere una visualización, basta con abrirlo desde cualquier naveg
 
 Abrir la URL `https://abygail27.github.io/cdmx-2019-01-bc-core-data-lovers/src/`
 
-`El usuario elegirá un País, posteriormente seleccionará un Indicador que le mostrará los datos estadísticos en una tabla y como plus podrá elegir visualizarlos en una gráfica`
+`El usuario elegirá un país, posteriormente seleccionará un I
+indicador que le mostrará los datos estadísticos en una tabla y como plus podrá elegir visualizarlos en una gráfica.
 
 2. Para editar el proyecto, se necesita clonar el Respositorio desde [GitHub](https://github.com/) https://abygail27.github.io/cdmx-2019-01-bc-core-data-lovers/src/ en la `Terminal`, usando [Git](https://git-scm.com/), [Node.js](https://nodejs.org/es/), un archivo `package.json` y [Morris.js](http://morrisjs.github.io/morris.js/)
 
