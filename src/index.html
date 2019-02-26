@@ -1,67 +1,51 @@
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Femeduca</title>
+  <title>El Trabajo en el Tiempo</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-  
-  <!--LINK QUE USA JQUERY PARA GRÁFICA-->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <!--LINKS DE LIBRERÍA DE GRÁFICAS-->
-    <link rel="stylesheet" href="../libs/morris.css">
-    <script src="../libs/morris.min.js" charset="utf-8"></script>
-    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-    FIN DE LINKS DE LIBRERÍA DE GRÁFICAS-->
-
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet'>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
-  <nav class="nav" id="Topnav">
-    <h1>Femeduca</h1>
-    <ul class="links">
-      <li><a href="#impact">Impacto</a></li>
-      <li><a href="#commits">Compromiso</a></li>
-    </ul>
-  </nav> 
+<header>
+  <div id="container">
+    <h1>El Trabajo en el Tiempo . . . </h1>
+  </div>
+</header>
 
 <body>
-    
-  <section id = "welcomePage" class = "welcome">
-    <div class = "text">
-    Adolescentes: derecho a la educación <br> y al bienestar futuro.<br>
-    <div id = "spaceforbutton"><button id = "informate" class = "Informate">Informate y participa</button> </div>
-    </div>
+  <section id="welcomePage" class="wp" style="background-image: url(https://www.tiovivocreativo.com/wp-content/uploads/2017/09/Diseño-oficinas.El-apartamento.Billy-Wilder-1.jpg)">
+      <button id="informate" class="boton">Más información</button>
   </section>
-
+  
   <section id="info" class="showPrincipal">
-    <article id = "instructions" class = "areaForText">
-     <h1>Las más escolarizadas, pero no las más educadas</h1>
-     A continuación presentaremos algunos datos estadísticos sobre la situación educativa de las mujeres en América Latina. Para ello se ha recurrido a información disponible en el Banco Mundial que aluden a la realidad regional. Sin embargo, somos conscientes de que esta información es escasa, fragmentaria y, en muchos casos, difícil o imposible de comparar. los datos estadísticos proporcionan la experiencia educativa de las mujeres. Indudablemente, el acceso a la educación, la permanencia y la movilidad a lo largo del sistema, son indicadores importantes de sus logros en el plano de la igualdad social.
+    <h1>Las máquinas nunca sustituirán al Hombre</h1>
+    <p id="instructions" style="align-content: center">
+        Un simple análisis de la estructura psicológica del ser humano nos muestra que una máquina
+        <br>nunca podrá superarnos en inteligencia, motivación, altruismo, sentimientos, creatividad, 
+        <br>conciencia, es decir, en las cualidades más elevadas del ser humano. 
+        <br>En fuerza sí, en velocidad de cálculo sí, en precisión sí, en inteligencia nunca.
+        <br>
+        <br>Aquí daremos un preámbulo de como ha evolucionado el hombre vs. la máquina a travès de los años, 
+        <br>y como se ha visto reflejado en su trabajo.
+    </p>
 
-    </article>
-    <p>indicador <b>Población mujeres (% del total),</b> seleccione País del que desea mostrar los datos.</p>
-    <p id="nom-indicador" class="hide"></p> 
-        
-    <select id="countryfilter" name= "countries">
-      <option>selecciona un pais</option>
-      <option value="MEX" >México</option>
-      <option value="PER" >Perú</option>
-      <option value="BRA" >Brasil</option>
-      <option value="CHL" >Chile</option>
+    <select id="countryfilter" name="countries">
+      <option>Selecciona un país</option>
+      <option value="MEX">México</option>
+      <option value="PER">Perú</option>
+      <option value="BRA">Brasil</option>
+      <option value="CHL">Chile</option>
     </select>
-
     <select name="indicadores" id="indicadores">
-      <option value="indicadores">indicadores</option>
+      <option value="indicadores">Indicadores</option>
     </select>
 
-    <!--DIV PARA VISUALIZAR TABLA-->
-    <div id="estadisticaAlta">Aqui va la Estadistica más alta</div>
+    <section id="show-content"> 
     <table>
       <thead>
         <tr>
@@ -71,79 +55,19 @@
       </thead>
       <tbody id="intentoDeTabla">
       </tbody>
+      <div id="intentoDeGrafica" style="width: 900px; height: 500px; float: right">
+      </div>
     </table>
-    <!--FIN DE DIV PARA VISUALIZAR-->
-
-    <!--DIV PARA VISUALIZAR GRÁFICAS-->
-    <div id="intentoDeGrafica" style="height: 250px;">
-    AQUI VA UNA GRÁFICA
-    </div>
-    <!--FIN DE DIV DE VISUALIZACIÓN DE GRÁFICAS-->
-    
-<section id="show-content"> </section>
-  </section>
-
-  <section id = "impact" class = "theImpact">
-      <div class="container">
-          <img src="imagenes/testimonio-kim-1.jpg" alt="Avatar" style="width:90px">
-          <p><span>Maria Luisa.</span> Chile.</p>
-          <p>"Nunca pense tener la oportunidad de verdaderamente estudiar, aun que tengo a mi hijo se que puedo ser como las mujeres que nos ayudaron"</p>
-        </div>
-        
-        <div class="container">
-          <img src="imagenes/images.jpg" alt="Avatar" style="width:90px">
-          <p><span > Antonieta Flores</span> Hidalgo, México</p>
-          <p>"Vinieron muchas maestras que nos enseñaron a leer"</p>
-        </div>
-  </section>
-
-  <section id = "commits" class = "theCommits" >
-   compromiso
-  </section>
-
-  <section id = "redes" class = "social" >
-    socialMedia holaaaaa
-  </section>
-  
-
+    <button id="visualizarGrafica" style="float: left">Ver Gráfica</button>
+      <img src="https://web.zenttre.mx/wp-content/uploads/2015/04/oficina-moderna-702x401.jpg" style="float: right"></img>
+    </section>
+      
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <script src="./data/worldbank/worldbank.js"></script>
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
 </body>
 
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <script src="./data/injuries/injuries.js"></script> -->
-<!-- <script src="./data/pokemon/pokemon.js"></script> -->
-<!-- <script src="./data/steam/steam.js"></script> -->
-<script src="./data/worldbank/worldbank.js"></script>
-<!-- <script src="./data/lol/lol.js"></script> -->
-<script src="data.js"></script>
-<script src="main.js"></script>
-
-</html>
